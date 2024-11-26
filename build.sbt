@@ -77,6 +77,10 @@ lazy val core = projectMatrix.in(file("core"))
   .settings(commonSettings)
   .settings(
     name := "remote-io-core",
+
+    libraryDependencies ++= Seq(
+      "org.typelevel" %%% "cats-core" % "2.7.0",
+    ),
   )
   .jvmPlatform(scalaVersions)
   .jsPlatform(scalaVersions)
