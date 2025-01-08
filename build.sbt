@@ -27,7 +27,7 @@ lazy val commonSettings: SettingsDefinition = Def.settings(
   libraryDependencies ++= Seq(
     "ch.qos.logback" % "logback-classic" % "1.4.13" % Test,
     "de.lolhens" %%% "munit-tagless-final" % "0.2.0" % Test,
-    "org.scalameta" %%% "munit" % "0.7.29" % Test,
+    "org.scalameta" %%% "munit" % "1.0.4" % Test,
   ),
 
   testFrameworks += new TestFramework("munit.Framework"),
